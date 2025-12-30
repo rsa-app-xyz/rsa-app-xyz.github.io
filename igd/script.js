@@ -159,6 +159,8 @@ tombolReset.addEventListener('click', () => {
 kontainerJudul.addEventListener('click', () => {
 
   document.querySelector('#kontainerForm').classList.toggle('none');
+  document.querySelector('#kontainerKetikan').classList.add('none');
   document.querySelector('#kontainerTextarea').classList.toggle('none');
 
 })
+
