@@ -1,0 +1,110 @@
+body {
+  background-color: #bdc3c7;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#kontainerJudul {
+  background-color: #ff6961;
+  margin-top: 20px;
+}
+
+#kontainerForm {
+  background-color: #d3d3d3;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  border: 4px solid #34495e;
+  border-radius: 20px;
+  margin: 0 auto 20px auto;
+}
+
+.pengaturanForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Menjaga semua isi form tetap di tengah secara horizontal */
+}
+
+.pengaturanForm div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.pengaturanForm input[type="text"],
+.pengaturanForm textarea {
+  width: 90%;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #34495e;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.pengaturanForm button {
+  width: 90%;
+  padding: 15px;
+  margin-top: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid #34495e;
+}
+
+#kontainerKetikan {
+  background-color: #f8f38d;
+  padding: 20px;
+}
+
+#kontainerTextarea {
+  background-color: #42d6a4;
+  padding: 15px;
+}
+
+.pengaturanForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#kontainerJudul,
+#kontainerForm,
+#kontainerKetikan,
+#kontainerPemfis,
+#kontainerTextarea {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  min-width: 320px;
+  border: 4px solid #34495e;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+#tombolKetikanIgd {
+  margin-top: 5px;
+  background-color: #ffb480;
+}
+
+#tombolReset {
+  background-color: #42d6a4;
+}
+
+#tombolHome {
+  background-color: #08cad1;
+}
+
+.none {
+  display: none !important;
+}

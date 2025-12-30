@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RSA-App</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="kontainerJudul">
+      <h1>IGD</h1>
+    </div>
+
+    <div id="kontainerForm">
+      <form class="pengaturanForm" action="index.html" method="post">
+        <div class="ukuranInput">
+          <input type="text" name="pssom" value="" id="pssom" placeholder="P/S/SO/M">
+        </div>
+        <div class="">
+          <input type="text" name="nama" value="" id="nama" placeholder="Nama">
+        </div>
+        <div class="">
+          <input type="text" name="kelamin" value="" id="kelamin" placeholder="Kelamin">
+        </div>
+        <div class="">
+          <input type="text" name="umur" value="" id="umur" placeholder="Umur">
+        </div>
+        <div class="">
+          <textarea name="keluhan" rows="6" cols="25" id="keluhan" placeholder="Keluhan"></textarea>
+        </div>
+        <div class="">
+          <textarea name="ttv" rows="6" cols="25" id="ttv" placeholder="TTV"></textarea>
+        </div>
+        <div class="">
+          <textarea name="pemfis" rows="6" cols="25" id="pemfis" placeholder="Pemfis"></textarea>
+        </div>
+        <div class="">
+          <textarea name="diagnosis" rows="6" cols="25" id="diagnosis" placeholder="Diagnosis"></textarea>
+        </div>
+        <div class="">
+          <textarea name="plan" rows="6" cols="25" id="plan" placeholder="Plan"></textarea>
+        </div>
+        <button type="button" name="tombolKetikanIgd" id="tombolKetikanIgd">Buat Ketikan IGD</button>
+        <button type="button" name="tombolReset" id="tombolReset">Reset</button>
+        <button type="button" name="tombolHome" id="tombolHome"><a href="../index.html" style="text-decoration: none; color: black;">Home</a></button>
+      </form>
+    </div>
+
+    <div class="none" id="kontainerKetikan">
+
+    </div>
+
+    <div id="kontainerTextarea" class="none">
+      <textarea name="name" rows="30" cols="80" style="background-color: #F5F5DC"></textarea>
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="../script/fungsiGlobal.js">
+
+  </script>
+
+  <script type="text/javascript" src="script.js">
+
+  </script>
+
+</html>

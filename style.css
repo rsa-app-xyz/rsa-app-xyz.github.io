@@ -1,0 +1,82 @@
+body {
+  background-color: #bdc3c7;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#kontainerJudul {
+  background-color: #ff6961;
+  margin-top: 20px;
+}
+
+#kontainerPemfis {
+  background-color: #08cad1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#kontainerSpreadsheet {
+  background-color: #ffb480;
+  margin-top: 20px;
+}
+
+#kontainerIgd {
+  background-color: #f8f38d;
+  margin-top: 20px;
+}
+
+#kontainerBangsal {
+  background-color: #42d6a4;
+  margin-top: 20px;
+}
+
+#kontainerTextarea {
+  background-color: #42d6a4;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#kontainerJudul,
+#kontainerPemfis,
+#kontainerSpreadsheet,
+#kontainerIgd,
+#kontainerBangsal,
+#kontainerTextarea {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  min-width: 320px;
+  border: 4px solid #34495e;
+  border-radius: 20px;
+}
+
+#kontainerBangsal,
+#kontainerTextarea {
+  margin-bottom: 20px;
+}
+
+.none {
+  display: none !important;
+}
+
+.copy-text {
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block; /* Agar padding/margin bekerja lebih baik jika ditambah */
+}
+
+.copy-text:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.copy-text:active {
+  transform: scale(0.98);
+}
