@@ -16,12 +16,6 @@ body {
   margin-top: 20px;
 }
 
-#kontainerPemfis {
-  background-color: #08cad1;
-  padding: 20px;
-  margin-top: 20px;
-}
-
 #kontainerSpreadsheet {
   background-color: #ffb480;
   margin-top: 20px;
@@ -37,6 +31,11 @@ body {
   margin-top: 20px;
 }
 
+#kontainerAi {
+  background-color: #08cad1;
+  margin-top: 20px;
+}
+
 #kontainerTextarea {
   background-color: #42d6a4;
   padding: 15px;
@@ -44,10 +43,10 @@ body {
 }
 
 #kontainerJudul,
-#kontainerPemfis,
 #kontainerSpreadsheet,
 #kontainerIgd,
 #kontainerBangsal,
+#kontainerAi,
 #kontainerTextarea {
   display: flex;
   flex-direction: column;
@@ -57,26 +56,11 @@ body {
   border-radius: 20px;
 }
 
-#kontainerBangsal,
+#kontainerAi,
 #kontainerTextarea {
   margin-bottom: 20px;
 }
 
 .none {
   display: none !important;
-}
-
-.copy-text {
-  cursor: pointer;
-  transition: all 0.2s;
-  display: inline-block; /* Agar padding/margin bekerja lebih baik jika ditambah */
-}
-
-.copy-text:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 5px;
-}
-
-.copy-text:active {
-  transform: scale(0.98);
 }

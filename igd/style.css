@@ -16,6 +16,15 @@ body {
   margin-top: 20px;
 }
 
+#kontainerCopyPemfis {
+  background-color: #08cad1;
+  padding: 20px;
+}
+
+#kontainerCopyObj {
+  background-color: #08cad1;
+}
+
 #kontainerForm {
   background-color: #d3d3d3;
   padding: 30px 0;
@@ -79,6 +88,8 @@ body {
 }
 
 #kontainerJudul,
+#kontainerCopyPemfis,
+#kontainerCopyObj,
 #kontainerForm,
 #kontainerKetikan,
 #kontainerPemfis,
@@ -102,9 +113,35 @@ body {
 }
 
 #tombolHome {
-  background-color: #08cad1;
+  width: 70%;
+  min-width: 320px;
+  background-color: #ffffff;
+  border: 4px solid #34495e;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .none {
   display: none !important;
+}
+
+.copy-text {
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-block; /* Agar padding/margin bekerja lebih baik jika ditambah */
+}
+
+.copy-text:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+}
+
+.copy-text:active {
+  transform: scale(0.98);
+}
+
+#kontainerCopyObj {
+  background-color: #08cad1;
+  cursor: pointer; /* Tambahkan ini agar kursor berubah saat diarahkan */
+  transition: background-color 0.2s; /* Tambahkan ini agar transisi warna halus */
 }

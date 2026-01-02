@@ -10,6 +10,7 @@ let diagnosis = document.querySelector('#diagnosis');
 let plan = document.querySelector('#plan');
 let tombolKetikanIgd = document.querySelector('#tombolKetikanIgd');
 let tombolReset = document.querySelector('#tombolReset');
+let tombolHome = document.querySelector('#tombolHome');
 
 // OTHER
 let kontainerJudul = document.querySelector('#kontainerJudul');
@@ -18,59 +19,6 @@ let kontainerJudul = document.querySelector('#kontainerJudul');
 let kontainerKetikan = document.querySelector('#kontainerKetikan');
 
 // TOMBOL
-// tombolKetikanIgd.addEventListener('click', () => {
-//
-//     document.querySelector('#kontainerKetikan').classList.remove('none');
-//
-//     // RUNNING FUNCTION
-//     let hasilPssom = fungsiPssom(pssom.value);
-//     let hasilNama = fungsiNama(nama.value);
-//     let hasilKelamin = kelamin.value.toUpperCase();
-//     let hasilUmur = umur.value;
-//     let hasilKeluhan = fungsiRapi(keluhan.value);
-//     let hasilTtv = fungsiRapi(ttv.value);
-//     let hasilPemfis = fungsiRapi(pemfis.value);
-//     let hasilDiagnosis = fungsiDiagnosis(diagnosis.value);
-//     let hasilPlan = fungsiPlanIgd(plan.value);
-//
-//     ketikan = document.createElement('p');
-//     ketikan.innerHTML +=
-//     `Selamat ${hasilPssom} dokter, mohon maaf mengganggu waktunya. Izin melaporkan pasien baru ED:
-//     <br>
-//     <br>*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th*
-//     <br>
-//     <br>*S:*
-//     <br>${hasilKeluhan}
-//     <br>
-//     <br>*O:*
-//     <br>${hasilTtv}
-//     <br>
-//     <br>${hasilPemfis}
-//     <br>
-//     <br>*A:*
-//     <br>${hasilDiagnosis}
-//     <br>
-//     <br>*P:*
-//     <br>Terapi IGD:
-//     <br>${hasilPlan}
-//     <br>
-//     <br>Mohon advice dan arahan selanjutnya dokter
-//     <br>Maturnuwun dokter<br>
-//     `
-//     kontainerKetikan.appendChild(ketikan);
-//
-//     // RESET
-//     pssom.value = '';
-//     nama.value = '';
-//     kelamin.value = '';
-//     umur.value = '';
-//     keluhan.value = '';
-//     ttv.value = '';
-//     pemfis.value = '';
-//     diagnosis.value = '';
-//     plan.value = '';
-//
-// })
 tombolKetikanIgd.addEventListener('click', () => {
 
     document.querySelector('#kontainerKetikan').classList.remove('none');
@@ -158,9 +106,57 @@ tombolReset.addEventListener('click', () => {
 
 kontainerJudul.addEventListener('click', () => {
 
+  document.querySelector('#kontainerCopyPemfis').classList.toggle('none');
+  document.querySelector('#kontainerCopyObj').classList.toggle('none');
   document.querySelector('#kontainerForm').classList.toggle('none');
   document.querySelector('#kontainerKetikan').classList.add('none');
   document.querySelector('#kontainerTextarea').classList.toggle('none');
 
 })
 
+// Mengambil semua elemen yang memiliki class 'copy-text'
+const listCopyText = document.querySelectorAll('.copy-text');
+
+listCopyText.forEach(item => {
+  item.addEventListener('click', () => {
+    // Ambil teks dari elemen yang diklik
+    const textToCopy = item.innerText;
+
+    // Fungsi copy ke clipboard
+    navigator.clipboard.writeText(textToCopy).then(() => {
+      // Memberi sedikit feedback visual (opsional)
+      console.log('Tersalin: ' + textToCopy);
+
+      // Opsional: Beri alert singkat atau efek warna
+      item.style.color = 'white';
+      setTimeout(() => {
+        item.style.color = 'black';
+      }, 200);
+    }).catch(err => {
+      console.error('Gagal menyalin: ', err);
+    });
+  });
+});
+
+// Memilih elemen kontainer Copy Obj
+let kontainerCopyObj = document.querySelector('#kontainerCopyObj');
+
+// Menambahkan event listener klik
+kontainerCopyObj.addEventListener('click', () => {
+    // Teks yang ingin disalin
+    const teksObj = `Preventif: anamnesis, pemeriksaan fisik, pemeriksaan penunjang
+Kuratif: medikamentosa
+Rehabilitatif: -
+Paliatif: -`;
+
+    // Proses menyalin ke clipboard
+    navigator.clipboard.writeText(teksObj).then(() => {
+        // Memberikan efek visual seperti tombol lainnya (opsional)
+        kontainerCopyObj.style.backgroundColor = '#06aeb4';
+        setTimeout(() => {
+            kontainerCopyObj.style.backgroundColor = '#08cad1';
+        }, 200);
+    }).catch(err => {
+        console.error('Gagal menyalin teks: ', err);
+    });
+});
