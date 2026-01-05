@@ -12,6 +12,7 @@ kontainerJudul.addEventListener('click', () => {
   document.querySelector('#kontainerIgd').classList.toggle('none');
   document.querySelector('#kontainerBangsal').classList.toggle('none');
   document.querySelector('#kontainerAi').classList.toggle('none');
+  document.querySelector('#kontainerNotes').classList.toggle('none');
 
   document.querySelector('#kontainerTextarea').classList.toggle('none');
 

@@ -36,6 +36,11 @@ body {
   margin-top: 20px;
 }
 
+#kontainerNotes {
+  background-color: #59adf6;
+  margin-top: 20px;
+}
+
 #kontainerTextarea {
   background-color: #42d6a4;
   padding: 15px;
@@ -47,6 +52,7 @@ body {
 #kontainerIgd,
 #kontainerBangsal,
 #kontainerAi,
+#kontainerNotes,
 #kontainerTextarea {
   display: flex;
   flex-direction: column;
@@ -56,7 +62,7 @@ body {
   border-radius: 20px;
 }
 
-#kontainerAi,
+#kontainerNotes,
 #kontainerTextarea {
   margin-bottom: 20px;
 }
