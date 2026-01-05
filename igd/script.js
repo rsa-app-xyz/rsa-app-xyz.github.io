@@ -37,7 +37,7 @@ tombolKetikanIgd.addEventListener('click', () => {
     let hasilPlan = fungsiPlanIgd(plan.value);
 
     // 1. VERSI UNTUK DISPLAY (Web)
-    let teksHTML = `Selamat ${hasilPssom} dokter, mohon maaf mengganggu waktunya. Izin melaporkan pasien baru ED:<br><br>` +
+    let teksHTML = `Selamat ${hasilPssom} dokter, mohon maaf mengganggu waktunya. Izin melaporkan pasien baru IGD RSA UGM:<br><br>` +
     `*${hasilNama}, ${hasilKelamin}, ${hasilUmur} th*<br><br>` +
     `*S:*<br>${hasilKeluhan}<br><br>` +
     `*O:*<br>${hasilTtv}<br><br>${hasilPemfis}<br><br>` +
@@ -55,7 +55,7 @@ tombolKetikanIgd.addEventListener('click', () => {
     const keTeksDatar = (html) => html.replace(/<br\s*\/?>/gi, '\n');
 
     // Susun ulang string tanpa indentasi kode sama sekali
-    let teksCopy = `Selamat ${hasilPssom} dokter, mohon maaf mengganggu waktunya. Izin melaporkan pasien baru ED:
+    let teksCopy = `Selamat ${hasilPssom} dokter, mohon maaf mengganggu waktunya. Izin melaporkan pasien baru IGD RSA UGM:
 
 *${hasilNama}, ${hasilKelamin}, ${hasilUmur} th*
 
@@ -160,3 +160,4 @@ Paliatif: -`;
         console.error('Gagal menyalin teks: ', err);
     });
 });
+
