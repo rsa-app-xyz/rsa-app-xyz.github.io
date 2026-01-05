@@ -160,4 +160,3 @@ Paliatif: -`;
         console.error('Gagal menyalin teks: ', err);
     });
 });
-

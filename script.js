@@ -13,6 +13,8 @@ kontainerJudul.addEventListener('click', () => {
   document.querySelector('#kontainerBangsal').classList.toggle('none');
   document.querySelector('#kontainerAi').classList.toggle('none');
   document.querySelector('#kontainerNotes').classList.toggle('none');
+  document.querySelector('#kontainerFormatKasusLapangan').classList.toggle('none');
+  document.querySelector('#kontainerFormatBelajarMandiri').classList.toggle('none');
 
   document.querySelector('#kontainerTextarea').classList.toggle('none');
 

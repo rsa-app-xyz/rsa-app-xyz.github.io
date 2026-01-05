@@ -41,6 +41,16 @@ body {
   margin-top: 20px;
 }
 
+#kontainerFormatKasusLapangan {
+  background-color: #e0c3fc;
+  margin-top: 20px;
+}
+
+#kontainerFormatBelajarMandiri {
+  background-color: #9d94ff;
+  margin-top: 20px;
+}
+
 #kontainerTextarea {
   background-color: #42d6a4;
   padding: 15px;
@@ -53,6 +63,8 @@ body {
 #kontainerBangsal,
 #kontainerAi,
 #kontainerNotes,
+#kontainerFormatKasusLapangan,
+#kontainerFormatBelajarMandiri,
 #kontainerTextarea {
   display: flex;
   flex-direction: column;
@@ -62,7 +74,7 @@ body {
   border-radius: 20px;
 }
 
-#kontainerNotes,
+#kontainerFormatBelajarMandiri,
 #kontainerTextarea {
   margin-bottom: 20px;
 }
