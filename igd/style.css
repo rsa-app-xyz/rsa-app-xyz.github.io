@@ -16,6 +16,10 @@ body {
   margin-top: 20px;
 }
 
+#kontainerSpreadsheet {
+  background-color: #ffb480;
+}
+
 #kontainerCopyPemfis {
   background-color: #08cad1;
   padding: 20px;
@@ -81,18 +85,12 @@ body {
   padding: 15px;
 }
 
-.pengaturanForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #kontainerJudul,
+#kontainerSpreadsheet,
 #kontainerCopyPemfis,
 #kontainerCopyObj,
 #kontainerForm,
 #kontainerKetikan,
-#kontainerPemfis,
 #kontainerTextarea {
   display: flex;
   flex-direction: column;

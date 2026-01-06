@@ -5,7 +5,6 @@ let rekomendasiMaka = document.querySelector('#rekomendasiMaka');
 let catatan = document.querySelector('#catatan');
 let tombolKetikanKasusLapangan = document.querySelector('#tombolKetikanKasusLapangan');
 let tombolReset = document.querySelector('#tombolReset');
-let tombolHome = document.querySelector('#tombolHome');
 
 // OTHER
 let kontainerJudul = document.querySelector('#kontainerJudul');

@@ -4,7 +4,6 @@ let pertanyaan = document.querySelector('#pertanyaan');
 let catatan = document.querySelector('#catatan');
 let tombolKetikanBelajarMandiri = document.querySelector('#tombolKetikanBelajarMandiri');
 let tombolReset = document.querySelector('#tombolReset');
-let tombolHome = document.querySelector('#tombolHome');
 
 // OTHER
 let kontainerJudul = document.querySelector('#kontainerJudul');

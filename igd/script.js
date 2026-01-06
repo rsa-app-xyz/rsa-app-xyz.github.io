@@ -10,7 +10,6 @@ let diagnosis = document.querySelector('#diagnosis');
 let plan = document.querySelector('#plan');
 let tombolKetikanIgd = document.querySelector('#tombolKetikanIgd');
 let tombolReset = document.querySelector('#tombolReset');
-let tombolHome = document.querySelector('#tombolHome');
 
 // OTHER
 let kontainerJudul = document.querySelector('#kontainerJudul');
@@ -106,6 +105,7 @@ tombolReset.addEventListener('click', () => {
 
 kontainerJudul.addEventListener('click', () => {
 
+  document.querySelector('#kontainerSpreadsheet').classList.toggle('none');
   document.querySelector('#kontainerCopyPemfis').classList.toggle('none');
   document.querySelector('#kontainerCopyObj').classList.toggle('none');
   document.querySelector('#kontainerForm').classList.toggle('none');

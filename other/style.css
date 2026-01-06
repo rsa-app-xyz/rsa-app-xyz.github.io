@@ -16,33 +16,33 @@ body {
   margin-top: 20px;
 }
 
-#kontainerSpreadsheet {
+#kontainerAiMedis {
   background-color: #ffb480;
   margin-top: 20px;
 }
 
-#kontainerIgd {
-  background-color: #ffb480;
-  margin-top: 20px;
-}
-
-#kontainerBangsal {
+#kontainerAiReviewPenyakitSingkat {
   background-color: #f8f38d;
   margin-top: 20px;
 }
 
-#kontainerKorpa {
+#kontainerAiReviewPenyakitLengkap {
   background-color: #42d6a4;
   margin-top: 20px;
 }
 
-#kontainerNotes {
+#kontainerAiObat {
   background-color: #08cad1;
   margin-top: 20px;
 }
 
-#kontainerOther {
+#kontainerFormatKasusLapangan {
   background-color: #59adf6;
+  margin-top: 20px;
+}
+
+#kontainerFormatBelajarMandiri {
+  background-color: #e0c3fc;
   margin-top: 20px;
 }
 
@@ -53,12 +53,12 @@ body {
 }
 
 #kontainerJudul,
-#kontainerSpreadsheet,
-#kontainerIgd,
-#kontainerBangsal,
-#kontainerKorpa,
-#kontainerNotes,
-#kontainerOther,
+#kontainerAiMedis,
+#kontainerAiReviewPenyakitSingkat,
+#kontainerAiReviewPenyakitLengkap,
+#kontainerAiObat,
+#kontainerFormatKasusLapangan,
+#kontainerFormatBelajarMandiri,
 #kontainerTextarea {
   display: flex;
   flex-direction: column;
@@ -68,8 +68,17 @@ body {
   border-radius: 20px;
 }
 
-#kontainerOther,
+#kontainerFormatBelajarMandiri,
 #kontainerTextarea {
+  margin-bottom: 20px;
+}
+
+#tombolHome {
+  width: 50%;
+  min-width: 320px;
+  background-color: #ffffff;
+  border: 4px solid #34495e;
+  border-radius: 20px;
   margin-bottom: 20px;
 }
 
