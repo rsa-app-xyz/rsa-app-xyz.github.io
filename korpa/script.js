@@ -17,9 +17,8 @@ let kontainerCopyFormatPria = document.querySelector('#kontainerCopyFormatPria')
 // Menambahkan event listener klik
 kontainerCopyFormatPria.addEventListener('click', () => {
     // Teks yang ingin disalin
-    const teksObj = `RPD: -
-RPO: -
-Riwayat alergi disangkal`;
+    const teksObj = `Riwayat alergi disangkal
+    Pasien diperiksa dr. Alfi`;
 
     // Proses menyalin ke clipboard
     navigator.clipboard.writeText(teksObj).then(() => {
@@ -40,11 +39,10 @@ let kontainerCopyFormatWanita = document.querySelector('#kontainerCopyFormatWani
 // Menambahkan event listener klik
 kontainerCopyFormatWanita.addEventListener('click', () => {
     // Teks yang ingin disalin
-    const teksObj = `RPD: -
-RPO: -
-Riwayat alergi disangkal
+    const teksObj = `Riwayat alergi disangkal
 Tidak sedang hamil
-Tidak sedang menyusui`;
+Tidak sedang menyusui
+Pasien diperiksa dr. Alfi`;
 
     // Proses menyalin ke clipboard
     navigator.clipboard.writeText(teksObj).then(() => {
@@ -82,3 +80,4 @@ Tidur cukup`;
         console.error('Gagal menyalin teks: ', err);
     });
 });
+
